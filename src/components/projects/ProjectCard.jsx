@@ -25,11 +25,23 @@ const ProjectCard = (props) => {
 			</div>
 			<div className="flex gap-3">
 				<button className="bg-white text-gray-800 rounded-md p-2">
-					Source Code
+					<a href={props.codeUrl} target="_blank" rel="noopener noreferrer">
+						Source Code
+					</a>
 				</button>
-				<button className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400">
-					Live Site
-				</button>
+				{props.id !== 3 ? (
+					<button className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400">
+						<a href={props.liveUrl} target="_blank" rel="noopener noreferrer">
+							Live Site
+						</a>
+					</button>
+				) : (
+					<button className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400">
+						<a href={props.liveUrl} download>
+							Download
+						</a>
+					</button>
+				)}
 			</div>
 		</div>
 	);

@@ -2,7 +2,7 @@ export const projects = [
 	{
 		id: 1,
 		title: "Dogs 4 Lyfe",
-		img: "https://placehold.co/300x200",
+		img: "./images/dogs4lyfe.jpg",
 		stack: [
 			{
 				tech: "React",
@@ -19,12 +19,14 @@ export const projects = [
 		],
 
 		description:
-			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem accusantium fuga, eum expedita veniam magni fugiat beatae, dolorum impedit perferendis eaque, esse autem sapiente reiciendis. Asperiores a nam esse est.",
+			"A mock app that lets you buy adorable dogs and get information on them! Users also are able to save their favourite dogs",
+		codeUrl: "https://github.com/wumpfroot/Dogs-4-lyfe",
+		liveUrl: "https://main--stupendous-centaur-dc0b16.netlify.app/",
 	},
 	{
 		id: 2,
 		title: "Password Generator",
-		img: "https://placehold.co/300x200",
+		img: "./images/passgen.jpg",
 		stack: [
 			{
 				tech: "HTML",
@@ -41,12 +43,14 @@ export const projects = [
 		],
 
 		description:
-			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem accusantium fuga, eum expedita veniam magni fugiat beatae, dolorum impedit perferendis eaque, esse autem sapiente reiciendis. Asperiores a nam esse est.",
+			"App that generates two secure passwords which can be copied to the clipboard",
+		codeUrl: "https://github.com/wumpfroot/Password-generator",
+		liveUrl: "https://curious-clafoutis-066470.netlify.app",
 	},
 	{
 		id: 3,
 		title: "Link Memo - Chrome Extension",
-		img: "https://placehold.co/300x200",
+		img: "./images/link_memo.jpg",
 		stack: [
 			{
 				tech: "HTML",
@@ -63,6 +67,8 @@ export const projects = [
 		],
 
 		description:
-			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem accusantium fuga, eum expedita veniam magni fugiat beatae, dolorum impedit perferendis eaque, esse autem sapiente reiciendis. Asperiores a nam esse est.",
+			"Chromium based browser extension, that allows the uset to save links through the input or automatically from the tab",
+		codeUrl: "https://github.com/wumpfroot/Link-memo-chrome-extension",
+		liveUrl: "./files/Link_Memo_extension.zip",
 	},
 ];

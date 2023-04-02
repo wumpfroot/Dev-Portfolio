@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+
 const Contact = () => {
 	const form = useRef();
 
@@ -37,8 +39,22 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="p-5">
+		<div className="p-5 h-screen">
 			<h2>Contact me</h2>
+			<p>Any questions, feedback? Or just know where to reach me?</p>
+			<p>Use these links</p>
+			<div className="text-4xl flex">
+				<a title="GitHub Profile" href="https://github.com/wumpfroot">
+					<AiOutlineGithub />
+				</a>
+				<a
+					title="LinkedIn Profile"
+					href="https://www.linkedin.com/in/markus-kojo/"
+				>
+					<AiOutlineLinkedin />
+				</a>
+			</div>
+			<p>Or use the contact form below to send me a message</p>
 			<form className="flex flex-col" ref={form} onSubmit={sendEmail}>
 				<label>Name</label>
 				<input type="text" name="user_name" />

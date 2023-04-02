@@ -6,10 +6,12 @@ const Navbar = () => {
 	const [mobileNav, setMobileNav] = useState(false);
 
 	return (
-		<section className="relative flex justify-between items-center">
+		<section className="bg-slate-900 flex justify-between items-center sticky top-0">
 			<h1 className="text-2xl">Markus Kojo</h1>
 			<div className="flex items-center gap-2">
-				<button>Resume</button>
+				<button>
+					<a href="./files/CV2022.pdf">Resume</a>
+				</button>
 				<RxHamburgerMenu
 					onClick={() => setMobileNav((bool) => !bool)}
 					size={30}
