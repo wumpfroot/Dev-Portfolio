@@ -9,17 +9,29 @@ const ProjectCard = (props) => {
 				<img className="w-full" src={props.img} alt="" />
 			</div>
 			<div className="flex flex-col items-center p-3">
-				<div className="flex w-full justify-around p-2">
+				<div className="flex w-full justify-around p-2 text-center">
 					<div className="self-center">
-						<img className="mx-auto w-9" src={props.stack[0].img} alt="" />
+						<img
+							className="mx-auto w-9 md:w-14"
+							src={props.stack[0].img}
+							alt={props.stack[0].tech}
+						/>
 						<p>{props.stack[0].tech}</p>
 					</div>
 					<div>
-						<img className="mx-auto w-9" src={props.stack[1].img} alt="" />
+						<img
+							className="mx-auto w-9 md:w-14"
+							src={props.stack[1].img}
+							alt={props.stack[1].tech}
+						/>
 						<p>{props.stack[1].tech}</p>
 					</div>
 					<div>
-						<img className="mx-auto w-9" src={props.stack[2].img} alt="" />
+						<img
+							className="mx-auto w-9 md:w-14"
+							src={props.stack[2].img}
+							alt={props.stack[2].tech}
+						/>
 						<p>{props.stack[2].tech}</p>
 					</div>
 				</div>
