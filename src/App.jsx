@@ -1,13 +1,13 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/projects/Projects";
 import About from "./components/About";
 import Skills from "./components/skills/Skills";
-import Contact from "./components/Contact";
+import Contact from "./components/contact/Contact";
 
 function App() {
 	return (
-		<div className="App">
+		<div className="App bg-neutral-950">
 			<main className="p-4">
 				<Navbar />
 				<Hero />

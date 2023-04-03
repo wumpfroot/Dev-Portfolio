@@ -2,7 +2,7 @@ const ProjectCard = (props) => {
 	return (
 		<div
 			key={props.id}
-			className="shadow-md shadow-white/10 flex flex-col items-center justify-center p-4 mb-3 rounded-md md:grid md:grid-cols-2"
+			className="shadow-md shadow-cyan-400/10 flex flex-col items-center justify-center p-4 mb-8 rounded-md md:grid md:grid-cols-2"
 		>
 			<div className="text-center">
 				<h2 className="text-xl">{props.title}</h2>

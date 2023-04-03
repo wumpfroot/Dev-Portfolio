@@ -3,9 +3,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-
-const Contact = () => {
+const Form = () => {
 	const form = useRef();
 
 	const sending = () =>
@@ -39,29 +37,26 @@ const Contact = () => {
 	};
 
 	return (
-		<div id="contact" className="flex flex-col justify-center p-5 h-screen">
-			<h2 className="text-5xl">Contact me</h2>
-			<p>Any questions, feedback? Or just know where to reach me?</p>
-			<p>Use these links</p>
-			<div className="text-4xl flex">
-				<a title="GitHub Profile" href="https://github.com/wumpfroot">
-					<AiOutlineGithub />
-				</a>
-				<a
-					title="LinkedIn Profile"
-					href="https://www.linkedin.com/in/markus-kojo/"
-				>
-					<AiOutlineLinkedin />
-				</a>
-			</div>
-			<p className="mt-5">Or use the contact form below to send me a message</p>
-			<form className="flex flex-col max-w-2xl" ref={form} onSubmit={sendEmail}>
+		<>
+			<form
+				className="flex flex-col max-w-2xl text-white"
+				ref={form}
+				onSubmit={sendEmail}
+			>
 				<label>Name</label>
-				<input type="text" name="user_name" />
+				<input
+					className="bg-neutral-900 rounded"
+					type="text"
+					name="user_name"
+				/>
 				<label>Email</label>
-				<input type="email" name="user_email" />
+				<input
+					className="bg-neutral-900 rounded"
+					type="email"
+					name="user_email"
+				/>
 				<label>Message</label>
-				<textarea name="message" />
+				<textarea className="bg-neutral-900 rounded" name="message" />
 				<button
 					className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400"
 					type="submit"
@@ -72,7 +67,7 @@ const Contact = () => {
 				</button>
 			</form>
 			<ToastContainer position="bottom-right" autoClose={3000} />
-		</div>
+		</>
 	);
 };
-export default Contact;
+export default Form;

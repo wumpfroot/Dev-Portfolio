@@ -1,39 +1,12 @@
-import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-
 import { useState } from "react";
 
-const Navbar = () => {
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+
+const NavMobile = () => {
 	const [mobileNav, setMobileNav] = useState(false);
 
 	return (
-		<section className="bg-[#1c1b22] flex justify-between items-center sticky top-0 p-4">
-			<h1 className="text-2xl">Markus Kojo</h1>
-			<div className="hidden md:block">
-				<nav>
-					<ul className="flex gap-10 text-xl">
-						<li>
-							<a className="hover:text-cyan-400" href="#about">
-								About
-							</a>
-						</li>
-						<li>
-							<a className="duration-200 hover:text-cyan-400" href="#skills">
-								Skills
-							</a>
-						</li>
-						<li>
-							<a className="duration-200 hover:text-cyan-400" href="#projects">
-								Projects
-							</a>
-						</li>
-						<li>
-							<a className="duration-200 hover:text-cyan-400" href="#contact">
-								Contact
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+		<>
 			<div className="flex items-center gap-2 md:hidden">
 				<button>
 					<a href="./files/CV2022.pdf">Resume</a>
@@ -82,7 +55,7 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</nav>
-		</section>
+		</>
 	);
 };
-export default Navbar;
+export default NavMobile;
