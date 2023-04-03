@@ -1,4 +1,4 @@
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 
 import { useState } from "react";
 
@@ -38,11 +38,19 @@ const Navbar = () => {
 				<button>
 					<a href="./files/CV2022.pdf">Resume</a>
 				</button>
-				<RxHamburgerMenu
-					onClick={() => setMobileNav((bool) => !bool)}
-					size={30}
-					style={{ cursor: "pointer" }}
-				/>
+				{!mobileNav ? (
+					<RxHamburgerMenu
+						onClick={() => setMobileNav(true)}
+						size={30}
+						style={{ cursor: "pointer" }}
+					/>
+				) : (
+					<RxCross1
+						onClick={() => setMobileNav(false)}
+						size={30}
+						style={{ cursor: "pointer" }}
+					/>
+				)}
 			</div>
 			<nav
 				className={
