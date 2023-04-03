@@ -5,12 +5,12 @@ const ProjectCard = (props) => {
 			className="shadow-md shadow-cyan-400/10 flex flex-col items-center justify-center p-4 mb-8 rounded-md md:grid md:grid-cols-2"
 		>
 			<div className="text-center">
-				<h2 className="text-xl">{props.title}</h2>
+				<h2 className="text-xl md:text-3xl">{props.title}</h2>
 				<img className="w-full" src={props.img} alt="" />
 			</div>
 			<div className="flex flex-col items-center p-3">
-				<div className="flex w-full justify-around p-2 text-center">
-					<div className="self-center">
+				<div className="flex w-full justify-around p-2 text-center md:text-lg">
+					<div>
 						<img
 							className="mx-auto w-9 md:w-14"
 							src={props.stack[0].img}
@@ -35,7 +35,7 @@ const ProjectCard = (props) => {
 						<p>{props.stack[2].tech}</p>
 					</div>
 				</div>
-				<div className="text-sm">
+				<div className="text-sm md:text-base">
 					<p>{props.description}</p>
 				</div>
 				<div className="flex gap-3">

@@ -7,7 +7,7 @@ import Contact from "./components/contact/Contact";
 
 function App() {
 	return (
-		<div className="App bg-neutral-950">
+		<div className="App">
 			<main className="p-4">
 				<Navbar />
 				<Hero />

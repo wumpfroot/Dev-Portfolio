@@ -43,19 +43,19 @@ const Form = () => {
 				ref={form}
 				onSubmit={sendEmail}
 			>
-				<label>Name</label>
+				<label className="text-lg mb-1">Name</label>
 				<input
 					className="bg-neutral-900 rounded"
 					type="text"
 					name="user_name"
 				/>
-				<label>Email</label>
+				<label className="text-lg mb-1">Email</label>
 				<input
 					className="bg-neutral-900 rounded"
 					type="email"
 					name="user_email"
 				/>
-				<label>Message</label>
+				<label className="text-lg mb-1">Message</label>
 				<textarea className="bg-neutral-900 rounded" name="message" />
 				<button
 					className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400"
