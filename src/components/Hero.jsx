@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
 	return (
-		<section className="animate-fadeIn">
+		<section className="animate-fadeIn h-screen flex items-center">
 			<div className="text-xl">
 				<h1 className="text-4xl my-8">
 					Hello, my name is

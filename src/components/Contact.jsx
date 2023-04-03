@@ -39,8 +39,8 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="p-5 h-screen">
-			<h2>Contact me</h2>
+		<div id="contact" className="flex flex-col justify-center p-5 h-screen">
+			<h2 className="text-5xl">Contact me</h2>
 			<p>Any questions, feedback? Or just know where to reach me?</p>
 			<p>Use these links</p>
 			<div className="text-4xl flex">
@@ -54,8 +54,8 @@ const Contact = () => {
 					<AiOutlineLinkedin />
 				</a>
 			</div>
-			<p>Or use the contact form below to send me a message</p>
-			<form className="flex flex-col" ref={form} onSubmit={sendEmail}>
+			<p className="mt-5">Or use the contact form below to send me a message</p>
+			<form className="flex flex-col max-w-2xl" ref={form} onSubmit={sendEmail}>
 				<label>Name</label>
 				<input type="text" name="user_name" />
 				<label>Email</label>

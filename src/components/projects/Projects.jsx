@@ -3,7 +3,7 @@ import { projects } from "../projectData";
 
 const Projects = () => {
 	return (
-		<div>
+		<div id="projects" className="mx-auto max-w-xl md:min-w-full">
 			<h2 className="text-2xl">Projects</h2>
 			{projects.map((project) => (
 				<div key={project.id}>

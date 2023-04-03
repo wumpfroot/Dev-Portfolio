@@ -20,14 +20,30 @@ const Navbar = () => {
 			</div>
 			<nav
 				className={
-					!mobileNav ? "hidden" : "absolute bg-slate-300 right-0 top-8"
+					!mobileNav ? "hidden" : "absolute bg-slate-300 right-0 top-8 p-8"
 				}
 			>
 				<ul>
-					<li>About</li>
-					<li>Skills</li>
-					<li>Projects</li>
-					<li>Contact</li>
+					<li>
+						<a onClick={() => setMobileNav(false)} href="#about">
+							About
+						</a>
+					</li>
+					<li>
+						<a onClick={() => setMobileNav(false)} href="#skills">
+							Skills
+						</a>
+					</li>
+					<li>
+						<a onClick={() => setMobileNav(false)} href="#projects">
+							Projects
+						</a>
+					</li>
+					<li>
+						<a onClick={() => setMobileNav(false)} href="#contact">
+							Contact
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</section>
