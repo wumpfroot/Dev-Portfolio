@@ -10,12 +10,19 @@ const Contact = () => {
 			</p>
 			<p className="mb-2 md:text-lg">Use these links</p>
 			<div className="text-4xl flex">
-				<a title="GitHub Profile" href="https://github.com/wumpfroot">
+				<a
+					title="GitHub Profile"
+					href="https://github.com/wumpfroot"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<AiOutlineGithub />
 				</a>
 				<a
 					title="LinkedIn Profile"
 					href="https://www.linkedin.com/in/markus-kojo/"
+					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<AiOutlineLinkedin />
 				</a>

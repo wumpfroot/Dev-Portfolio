@@ -9,7 +9,9 @@ const NavMobile = () => {
 		<>
 			<div className="flex items-center gap-2 md:hidden">
 				<button>
-					<a href="./files/CV2022.pdf">Resume</a>
+					<a href="./files/CV2023.pdf" download>
+						Resume
+					</a>
 				</button>
 				{!mobileNav ? (
 					<RxHamburgerMenu

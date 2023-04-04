@@ -6,7 +6,7 @@ const Hero = () => {
 		<section className="animate-fadeIn h-screen flex items-center md:justify-center">
 			<div className="text-2xl">
 				<h1 className="text-7xl my-8 md:text-8xl">
-					Hello, my name is
+					<h1 className="text-cyan-400">Hello, my name is</h1>
 					<Typewriter
 						onInit={(typewriter) => {
 							typewriter
@@ -40,14 +40,16 @@ const Hero = () => {
 					</a>
 				</div>
 				<p className="mb-4">
-					Frontend developer, born in Finland. Located in Manchester, UK.
+					Frontend developer, born in{" "}
+					<span className="text-blue-400">Finland</span>. Located in{" "}
+					<span className="text-red-500">Manchester</span>, UK.
 				</p>
 				<p>
 					Take a look at my projects and what I can offer below and take a look
 					at my{" "}
 					<a
 						className="text-cyan-400 font-bold"
-						href="../assets/CV2022.pdf"
+						href="./files/CV2023.pdf"
 						download
 					>
 						resume

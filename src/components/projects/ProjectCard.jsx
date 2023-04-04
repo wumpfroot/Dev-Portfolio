@@ -35,7 +35,7 @@ const ProjectCard = (props) => {
 						<p>{props.stack[2].tech}</p>
 					</div>
 				</div>
-				<div className="text-sm md:text-base">
+				<div className="text-sm md:text-xl">
 					<p>{props.description}</p>
 				</div>
 				<div className="flex gap-3">
