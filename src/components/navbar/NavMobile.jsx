@@ -1,6 +1,11 @@
 import { useState } from "react";
 
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import {
+	AiOutlineGithub,
+	AiOutlineLinkedin,
+	AiOutlineMail,
+} from "react-icons/ai";
 
 const NavMobile = () => {
 	const [mobileNav, setMobileNav] = useState(false);
@@ -56,6 +61,26 @@ const NavMobile = () => {
 						</a>
 					</li>
 				</ul>
+				<div className="flex items-center justify-between mt-10 text-4xl">
+					<a
+						onClick={() => setMobileNav(false)}
+						href="https://www.linkedin.com/in/markus-kojo/"
+					>
+						<AiOutlineLinkedin />
+					</a>
+					<a
+						onClick={() => setMobileNav(false)}
+						href="https://github.com/wumpfroot"
+					>
+						<AiOutlineGithub />
+					</a>
+					<a
+						onClick={() => setMobileNav(false)}
+						href="mailto:markuskojo@msn.com"
+					>
+						<AiOutlineMail />
+					</a>
+				</div>
 			</nav>
 		</>
 	);
