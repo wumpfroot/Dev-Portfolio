@@ -67,7 +67,7 @@ export const projects = [
 		],
 
 		description:
-			"Chromium based browser extension, that allows the uset to save links through the input or automatically from the tab",
+			"Chromium based browser extension, that allows the user to save links through the input or automatically from the tab",
 		codeUrl: "https://github.com/wumpfroot/Link-memo-chrome-extension",
 		liveUrl: "./files/Link_Memo_extension.zip",
 	},

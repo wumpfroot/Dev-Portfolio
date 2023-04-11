@@ -19,7 +19,7 @@ const Hero = () => {
 						}}
 					/>
 				</h1>
-				<div className="flex justify-evenly my-9 text-5xl md:justify-start">
+				<div className="flex justify-evenly my-9 text-5xl items-center">
 					<a
 						title="GitHub profile"
 						href="https://github.com/wumpfroot"
@@ -38,23 +38,20 @@ const Hero = () => {
 					>
 						<AiOutlineLinkedin />
 					</a>
+					<a
+						className="text-cyan-400 text-3xl"
+						href="./files/CV2023.pdf"
+						download
+					>
+						download resume
+					</a>
 				</div>
 				<p className="mb-4">
 					Frontend developer, born in{" "}
 					<span className="text-blue-400">Finland</span>. Located in{" "}
 					<span className="text-red-500">Manchester</span>, UK.
 				</p>
-				<p>
-					Take a look at my projects and what I can offer below and take a look
-					at my{" "}
-					<a
-						className="text-cyan-400 font-bold"
-						href="./files/CV2023.pdf"
-						download
-					>
-						resume
-					</a>
-				</p>
+				<p>Take a look at my projects and what I can offer below</p>
 			</div>
 		</section>
 	);
