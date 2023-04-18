@@ -1,0 +1,28 @@
+.divider-top,
+.divider-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.divider-top svg,
+.divider-bottom svg {
+	position: relative;
+	display: block;
+	width: calc(119% + 1.3px);
+	height: 100px;
+}
+
+.divider-top .shape-fill {
+	fill: #22d3ee;
+}
+
+/* Contact divider color fill */
+
+.divider-bottom .shape-fill {
+	fill: #ef4444;
+}
