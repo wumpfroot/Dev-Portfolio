@@ -39,26 +39,18 @@ const Form = () => {
 	return (
 		<>
 			<form
-				className="flex flex-col max-w-2xl text-white"
+				className="flex flex-col max-w-2xl text-black"
 				ref={form}
 				onSubmit={sendEmail}
 			>
-				<label className="text-lg mb-1">Name</label>
-				<input
-					className="bg-neutral-900 rounded"
-					type="text"
-					name="user_name"
-				/>
-				<label className="text-lg mb-1">Email</label>
-				<input
-					className="bg-neutral-900 rounded"
-					type="email"
-					name="user_email"
-				/>
-				<label className="text-lg mb-1">Message</label>
-				<textarea className="bg-neutral-900 rounded" name="message" />
+				<label className="text-lg text-white mb-1">Name</label>
+				<input className="p-1 rounded mb-2" type="text" name="user_name" />
+				<label className="text-lg text-white mb-1">Email</label>
+				<input className="p-1 rounded mb-2" type="email" name="user_email" />
+				<label className="text-lg text-white mb-1">Message</label>
+				<textarea className=" p-1 rounded mb-4" name="message" />
 				<button
-					className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400"
+					className="text-white border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400"
 					type="submit"
 					value="Send"
 					onClick={sending}

@@ -14,29 +14,21 @@ const NavMobile = () => {
 		<>
 			<div className="flex items-center gap-2 md:hidden">
 				<button>
-					<a href="./files/CV2023.pdf" download>
+					<a className="text-cyan-400" href="./files/CV2023.pdf" download>
 						Resume
 					</a>
 				</button>
 				{!mobileNav ? (
-					<RxHamburgerMenu
-						onClick={() => setMobileNav(true)}
-						size={30}
-						style={{ cursor: "pointer" }}
-					/>
+					<RxHamburgerMenu onClick={() => setMobileNav(true)} size={35} />
 				) : (
-					<RxCross1
-						onClick={() => setMobileNav(false)}
-						size={30}
-						style={{ cursor: "pointer" }}
-					/>
+					<RxCross1 onClick={() => setMobileNav(false)} size={35} />
 				)}
 			</div>
 			<nav
 				className={
 					!mobileNav
 						? "hidden"
-						: "absolute bg-slate-300 w-72 text-center text-xl text-black top-12 right-4 p-8"
+						: "absolute bg-slate-300 w-72 text-center text-xl text-black top-14 right-4 p-8 rounded"
 				}
 			>
 				<ul className="flex flex-col gap-11">
