@@ -6,8 +6,8 @@ const Hero = () => {
 	return (
 		<>
 			<section className="relative animate-fadeIn h-screen flex md:items-center md:justify-center p-4">
-				<div className="text-2xl">
-					<h1 className="text-7xl my-8 md:text-8xl">
+				<div className="text-xl md:text-2xl">
+					<h1 className="text-6xl my-8 md:text-8xl">
 						<h1 className="text-cyan-400">Hello, my name is</h1>
 						<Typewriter
 							onInit={(typewriter) => {
@@ -21,7 +21,7 @@ const Hero = () => {
 							}}
 						/>
 					</h1>
-					<div className="flex justify-evenly my-9 text-5xl items-center">
+					<div className="flex justify-evenly my-5 md:my-9 text-3xl md:text-4xl items-center">
 						<a
 							title="GitHub profile"
 							href="https://github.com/wumpfroot"

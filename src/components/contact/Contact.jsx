@@ -23,13 +23,16 @@ const Contact = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<AiOutlineLinkedin size={30} />
+						<AiOutlineLinkedin size={40} />
 					</a>
 				</div>
 				<div className="md:text-2xl">
 					<p>
 						email:{" "}
-						<a className="text-cyan-400" href="mailto:markuskojo@msn.com">
+						<a
+							className="text-cyan-400 text-xl"
+							href="mailto:markuskojo@msn.com"
+						>
 							markuskojo@msn.com
 						</a>
 					</p>
