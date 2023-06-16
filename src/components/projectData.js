@@ -1,6 +1,30 @@
 export const projects = [
 	{
 		id: 1,
+		title: "Froot Emporium",
+		img: "./images/froot_emporium.jpg",
+		stack: [
+			{
+				tech: "React",
+				img: "./images/React-icon.svg",
+			},
+			{
+				tech: "JavaScript",
+				img: "./images/JavaScript-logo.png",
+			},
+			{
+				tech: "Tailwind CSS",
+				img: "./images/Tailwind_CSS_Logo.svg",
+			},
+		],
+
+		description:
+			"FRESH FROOTS, FRESH FROOTS! A mock app to buy fruits fast and cheap. First app that uses the Context API for state. Animations made with Framer Motion.",
+		codeUrl: "https://github.com/wumpfroot/froot_emporium",
+		liveUrl: "https://froot-emporium.vercel.app/",
+	},
+	{
+		id: 2,
 		title: "Dogs 4 Lyfe",
 		img: "./images/dogs4lyfe.jpg",
 		stack: [
@@ -24,7 +48,7 @@ export const projects = [
 		liveUrl: "https://main--stupendous-centaur-dc0b16.netlify.app/",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Password Generator",
 		img: "./images/passgen.jpg",
 		stack: [
@@ -48,7 +72,7 @@ export const projects = [
 		liveUrl: "https://curious-clafoutis-066470.netlify.app",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Link Memo - Chrome Extension",
 		img: "./images/link_memo.jpg",
 		stack: [

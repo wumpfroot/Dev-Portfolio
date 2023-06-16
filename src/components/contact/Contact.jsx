@@ -1,6 +1,6 @@
 import DividerBottom from "../PageDivider/DividerBottom";
 import Form from "./Form";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 const Contact = () => {
 	return (
