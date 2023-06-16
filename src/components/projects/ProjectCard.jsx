@@ -44,19 +44,11 @@ const ProjectCard = (props) => {
 							Source Code
 						</a>
 					</button>
-					{props.id !== 4 ? (
-						<button className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400">
-							<a href={props.liveUrl} target="_blank" rel="noopener noreferrer">
-								Live Site
-							</a>
-						</button>
-					) : (
-						<button className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400">
-							<a href={props.liveUrl} download>
-								Download
-							</a>
-						</button>
-					)}
+					<button className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400">
+						<a href={props.liveUrl} target="_blank" rel="noopener noreferrer">
+							{props.id !== 4 ? "Live Site" : "Download"}
+						</a>
+					</button>
 				</div>
 			</div>
 		</div>
