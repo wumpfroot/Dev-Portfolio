@@ -5,7 +5,10 @@ import Divider from "./PageDivider/Divider";
 const Hero = () => {
 	return (
 		<>
-			<section className="relative animate-fadeIn h-screen flex md:items-center md:justify-center p-4">
+			<section
+				id="hero"
+				className="relative animate-fadeIn h-screen flex md:items-center md:justify-center px-4"
+			>
 				<div className="text-xl md:text-2xl">
 					<h1 className="text-6xl my-8 md:text-8xl">
 						<h1 className="text-cyan-400">Hello, my name is</h1>

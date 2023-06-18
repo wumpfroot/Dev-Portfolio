@@ -1,6 +1,6 @@
 const About = () => {
 	return (
-		<section id="about" className="grid content-center text-center my-11 p-5">
+		<section id="about" className="grid content-center text-center py-16 px-5">
 			<h1 className="text-7xl">About</h1>
 			<p className="text-xl md:text-3xl">
 				Front-end developer with an eye for visually beautiful websites that
