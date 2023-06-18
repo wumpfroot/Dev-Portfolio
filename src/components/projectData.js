@@ -19,7 +19,7 @@ export const projects = [
 		],
 
 		description:
-			"FRESH FROOTS, FRESH FROOTS! A mock app to buy fruits fast and cheap. First app that uses the Context API for state. Animations made with Framer Motion.",
+			"FRESH FROOTS, FRESH FROOTS! A mock app made with Next.js, to buy fruits fast and cheap. First app that uses the Context API for state, and Stripe backend integrated for test payments. Animations made with Framer Motion.",
 		codeUrl: "https://github.com/wumpfroot/froot_emporium",
 		liveUrl: "https://froot-emporium.vercel.app/",
 	},
