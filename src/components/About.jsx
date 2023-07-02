@@ -9,7 +9,7 @@ const About = () => {
 				transition={{ duration: 1 }}
 			>
 				<h1 className="text-7xl">About</h1>
-				<p className="text-xl md:text-3xl">
+				<p className="text-xl md:text-3xl mx-auto max-w-screen-md">
 					Frontend developer with an eye for visually beautiful websites that
 					scale to all devices. Always excited to learn something new and keep
 					up with new technologies. I am always open for job opportunities that

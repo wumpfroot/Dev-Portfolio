@@ -40,7 +40,7 @@ const Form = () => {
 	return (
 		<>
 			<form
-				className="flex flex-col min-w-full text-black"
+				className="flex flex-col w-3/5 mx-auto text-black"
 				ref={form}
 				onSubmit={sendEmail}
 			>

@@ -55,7 +55,7 @@ const Hero = () => {
 						Frontend developer, born in{" "}
 						<span className="text-blue-400">Finland</span>. Located in{" "}
 						<span className="text-red-500">Manchester</span>, UK.
-						<br /> Looking for my first position in the coding industry.
+						<br /> Looking for my first job opportunity in the coding industry.
 					</p>
 					<p>Take a look at my projects and what I can offer below.</p>
 				</div>
