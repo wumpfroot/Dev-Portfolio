@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -39,7 +40,7 @@ const Form = () => {
 	return (
 		<>
 			<form
-				className="flex flex-col max-w-2xl text-black"
+				className="flex flex-col min-w-full text-black"
 				ref={form}
 				onSubmit={sendEmail}
 			>
@@ -48,15 +49,16 @@ const Form = () => {
 				<label className="text-lg text-white mb-1">Email</label>
 				<input className="p-1 rounded mb-2" type="email" name="user_email" />
 				<label className="text-lg text-white mb-1">Message</label>
-				<textarea className=" p-1 rounded mb-4" name="message" />
-				<button
+				<textarea className=" p-1 rounded mb-4" rows={6} name="message" />
+				<motion.button
+					whileTap={{ scale: 0.95 }}
 					className="text-white border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400"
 					type="submit"
 					value="Send"
 					onClick={sending}
 				>
 					Send
-				</button>
+				</motion.button>
 			</form>
 			<ToastContainer position="bottom-right" autoClose={3000} />
 		</>

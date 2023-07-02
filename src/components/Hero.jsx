@@ -10,7 +10,7 @@ const Hero = () => {
 				className="relative animate-fadeIn h-screen flex md:items-center md:justify-center px-4"
 			>
 				<div className="text-xl md:text-2xl">
-					<h1 className="text-6xl my-8 md:text-8xl">
+					<h1 className="text-4xl my-8 md:text-8xl">
 						<h1 className="text-cyan-400">Hello, my name is</h1>
 						<Typewriter
 							onInit={(typewriter) => {

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const ProjectCard = (props) => {
 	return (
 		<div
@@ -38,17 +40,24 @@ const ProjectCard = (props) => {
 				<div className="text-sm md:text-xl">
 					<p>{props.description}</p>
 				</div>
-				<div className="flex gap-3">
-					<button className="bg-white text-gray-800 rounded-md p-2">
+				<div className="flex gap-3 my-3">
+					<motion.button
+						whileHover={{ scale: 1.05 }}
+						whileTap={{ scale: 0.95 }}
+						className="bg-white text-gray-800 rounded-md p-2"
+					>
 						<a href={props.codeUrl} target="_blank" rel="noopener noreferrer">
 							Source Code
 						</a>
-					</button>
-					<button className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400">
+					</motion.button>
+					<motion.button
+						whileTap={{ scale: 0.95 }}
+						className="border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400"
+					>
 						<a href={props.liveUrl} target="_blank" rel="noopener noreferrer">
 							{props.id !== 4 ? "Live Site" : "Download"}
 						</a>
-					</button>
+					</motion.button>
 				</div>
 			</div>
 		</div>

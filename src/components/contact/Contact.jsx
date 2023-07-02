@@ -7,12 +7,10 @@ const Contact = () => {
 		<div className="relative">
 			<div
 				id="contact"
-				className="relative flex flex-col justify-center p-5 h-screen"
+				className="flex flex-col justify-center items-center p-5 h-screen"
 			>
 				<h2 className="text-5xl">Contact me</h2>
-				<p className="md:text-xl">
-					Any questions, feedback? Or just know where to reach me?
-				</p>
+				<p className="md:text-xl">Any questions or feedback?</p>
 				<div className="flex items-center">
 					<p>
 						Message me on <span className="text-cyan-400">LinkedIn</span>
