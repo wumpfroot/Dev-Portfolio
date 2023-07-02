@@ -10,12 +10,11 @@ const About = () => {
 			>
 				<h1 className="text-7xl">About</h1>
 				<p className="text-xl md:text-3xl">
-					Front-end developer with an eye for visually beautiful websites that
+					Frontend developer with an eye for visually beautiful websites that
 					scale to all devices. Always excited to learn something new and keep
-					up with the new technologies. Along with coding, music and video games
-					are close to my heart. If I am not in front of a computer, I am
-					travelling around the world to experience new cultures, or playing
-					music.
+					up with new technologies. I am always open for job opportunities that
+					allow me to learn and grow as a developer, so feel free to contact me.
+					Along with coding, music and video games are close to my heart.
 				</p>
 			</motion.div>
 		</section>

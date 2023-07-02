@@ -51,12 +51,13 @@ const Hero = () => {
 							download resume
 						</a>
 					</div>
-					<p className="mb-4">
+					<p>
 						Frontend developer, born in{" "}
 						<span className="text-blue-400">Finland</span>. Located in{" "}
 						<span className="text-red-500">Manchester</span>, UK.
+						<br /> Looking for my first position in the coding industry.
 					</p>
-					<p>Take a look at my projects and what I can offer below</p>
+					<p>Take a look at my projects and what I can offer below.</p>
 				</div>
 			</section>
 			<Divider />
