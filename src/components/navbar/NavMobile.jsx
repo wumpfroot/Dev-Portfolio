@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { motion } from "framer-motion";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import {
 	AiOutlineGithub,
@@ -24,12 +25,9 @@ const NavMobile = () => {
 					<RxCross1 onClick={() => setMobileNav(false)} size={35} />
 				)}
 			</div>
-			<nav
-				className={
-					!mobileNav
-						? "hidden"
-						: "absolute bg-slate-300 w-72 text-center text-xl text-black top-14 right-4 p-8 rounded"
-				}
+			<motion.nav
+				animate={{ opacity: mobileNav ? 1 : 0 }}
+				className="absolute bg-slate-300 w-72 text-center text-xl text-black top-14 right-4 p-8 rounded"
 			>
 				<ul className="flex flex-col gap-11">
 					<li>
@@ -73,7 +71,7 @@ const NavMobile = () => {
 						<AiOutlineMail />
 					</a>
 				</div>
-			</nav>
+			</motion.nav>
 		</>
 	);
 };
