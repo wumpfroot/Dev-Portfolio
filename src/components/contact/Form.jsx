@@ -40,16 +40,41 @@ const Form = () => {
 	return (
 		<>
 			<form
-				className="flex flex-col w-3/5 mx-auto text-black"
+				className="flex flex-col w-3/5 mx-auto text-black mb-20"
 				ref={form}
 				onSubmit={sendEmail}
 			>
-				<label className="text-lg text-white mb-1">Name</label>
-				<input className="p-1 rounded mb-2" type="text" name="user_name" />
-				<label className="text-lg text-white mb-1">Email</label>
-				<input className="p-1 rounded mb-2" type="email" name="user_email" />
-				<label className="text-lg text-white mb-1">Message</label>
-				<textarea className=" p-1 rounded mb-4" rows={6} name="message" />
+				<label htmlFor="name" className="text-lg text-white mb-1">
+					Name
+				</label>
+				<input
+					id="name"
+					className="p-1 rounded mb-2"
+					type="text"
+					name="user_name"
+					title="input name"
+					placeholder="Your name here..."
+				/>
+				<label htmlFor="email" className="text-lg text-white mb-1">
+					Email
+				</label>
+				<input
+					id="email"
+					className="p-1 rounded mb-2"
+					type="email"
+					name="user_email"
+					placeholder="Your email here..."
+				/>
+				<label htmlFor="message" className="text-lg text-white mb-1">
+					Message
+				</label>
+				<textarea
+					id="message"
+					className=" p-1 rounded mb-4"
+					rows={6}
+					name="message"
+					placeholder="Your message here..."
+				/>
 				<motion.button
 					whileTap={{ scale: 0.95 }}
 					className="text-white border border-gray-600 rounded-md p-2 hover:border hover:border-cyan-400"
