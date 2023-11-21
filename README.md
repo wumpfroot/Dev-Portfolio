@@ -8,7 +8,7 @@ Frontend development portfolio website, that showcases my skills in an easy-to-r
 
 React, TailwindCSS, CSS
 
-Beatiful divider curves are from [shapedivider.app](https://www.shapedivider.app/)
+Beautiful divider curves are from [shapedivider.app](https://www.shapedivider.app/)
 
 
 [LIVE SITE](https://markuskojo.com/)
