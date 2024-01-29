@@ -24,8 +24,8 @@ const Contact = () => {
 				<div className="md:text-2xl">
 					<p>
 						email:{" "}
-						<a className="text-cyan-400 text-xl" href="mailto:markuskojo@msn.com">
-							markuskojo@msn.com
+						<a className="text-cyan-400 text-xl" href="mailto:itswumpa@gmail.com">
+							itswumpa@gmail.com
 						</a>
 					</p>
 				</div>
