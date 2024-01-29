@@ -25,6 +25,12 @@ export const skillData = [
 	},
 	{
 		id: 5,
+		title: "Python",
+		img: "./images/python-logo.svg",
+		link: "https://www.python.org/",
+	},
+	{
+		id: 6,
 		title: "Git",
 		img: "./images/Git-Icon.svg",
 		link: "https://git-scm.com/",
