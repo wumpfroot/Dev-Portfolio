@@ -23,7 +23,7 @@ const Hero = () => {
 							<AiOutlineLinkedin />
 						</a>
 						<a className="text-cyan-400 text-3xl" href="./files/CV_2024.pdf" download>
-							download resume
+							download CV
 						</a>
 					</div>
 					<p>

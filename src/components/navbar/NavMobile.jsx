@@ -13,16 +13,9 @@ const NavMobile = () => {
 				<a className="text-cyan-400" href="./files/CV2023.pdf" download>
 					Resume
 				</a>
-				{!mobileNav ? (
-					<RxHamburgerMenu onClick={() => setMobileNav(true)} size={35} />
-				) : (
-					<RxCross1 onClick={() => setMobileNav(false)} size={35} />
-				)}
+				{!mobileNav ? <RxHamburgerMenu onClick={() => setMobileNav(true)} size={35} /> : <RxCross1 onClick={() => setMobileNav(false)} size={35} />}
 			</div>
-			<motion.nav
-				animate={{ display: mobileNav ? "block" : "none" }}
-				className="absolute bg-slate-300 w-72 text-center text-xl text-black top-14 right-4 p-8 rounded"
-			>
+			<motion.nav animate={{ display: mobileNav ? "block" : "none" }} className="absolute bg-slate-300 w-72 text-center text-xl text-black top-14 right-4 p-8 rounded">
 				<ul className="flex flex-col gap-11">
 					<li>
 						<a onClick={() => setMobileNav(false)} href="#about">
@@ -46,17 +39,13 @@ const NavMobile = () => {
 					</li>
 				</ul>
 				<div className="flex items-center justify-between mt-10 text-4xl">
-					<a
-						onClick={() => setMobileNav(false)}
-						href="https://www.linkedin.com/in/markus-kojo/"
-						title="LinkedIn"
-					>
+					<a onClick={() => setMobileNav(false)} href="https://www.linkedin.com/in/markus-kojo/" title="LinkedIn">
 						<AiOutlineLinkedin />
 					</a>
 					<a onClick={() => setMobileNav(false)} href="https://github.com/wumpfroot" title="Github">
 						<AiOutlineGithub />
 					</a>
-					<a onClick={() => setMobileNav(false)} href="mailto:markuskojo@msn.com" title="email">
+					<a onClick={() => setMobileNav(false)} href="mailto:itswumpa@gmail.com" title="email">
 						<AiOutlineMail />
 					</a>
 				</div>
