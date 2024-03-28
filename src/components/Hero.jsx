@@ -22,7 +22,7 @@ const Hero = () => {
 						<a title="LinkedIn profile" href="https://www.linkedin.com/in/markus-kojo/" className="cursor-pointer" target="_blank" rel="noopener noreferrer">
 							<AiOutlineLinkedin />
 						</a>
-						<a className="text-cyan-400 text-3xl" href="./files/CV2023.pdf" download>
+						<a className="text-cyan-400 text-3xl" href="./files/CV_2024.pdf" download>
 							download resume
 						</a>
 					</div>
