@@ -31,6 +31,18 @@ export const skillData = [
 	},
 	{
 		id: 6,
+		title: "PostgreSQL",
+		img: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+		link: "https://www.postgresql.org/",
+	},
+	{
+		id: 7,
+		title: "MongoDB",
+		img: "./images/mongo.png",
+		link: "https://www.mongodb.com/",
+	},
+	{
+		id: 8,
 		title: "Git",
 		img: "./images/Git-Icon.svg",
 		link: "https://git-scm.com/",
