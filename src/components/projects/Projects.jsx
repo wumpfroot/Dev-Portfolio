@@ -13,11 +13,13 @@ const Projects = () => {
 					<AiOutlineGithub size={50} />
 				</a>{" "}
 			</i>
-			{projects.map((project) => (
-				<div key={project.id}>
-					<ProjectCard {...project} />
-				</div>
-			))}
+			<div className="grid lg:grid-cols-3 gap-2 mx-3">
+				{projects.map((project) => (
+					<div key={project.id}>
+						<ProjectCard {...project} />
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };

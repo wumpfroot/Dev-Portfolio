@@ -5,10 +5,10 @@ import Divider from "./PageDivider/Divider";
 const Hero = () => {
 	return (
 		<>
-			<section id="hero" className="relative animate-fadeIn h-screen flex md:items-center md:justify-center px-4">
+			<section id="hero" className="relative animate-fadeIn h-screen flex items-center justify-center px-4">
 				<div className="text-xl md:text-2xl">
 					<h1 className="text-4xl my-8 md:text-8xl">
-						<h1 className="text-cyan-400">Hello, my name is</h1>
+						<span className="text-cyan-400">Hello, my name is</span>
 						<Typewriter
 							onInit={(typewriter) => {
 								typewriter.pasteString("your name").pauseFor(2000).changeDeleteSpeed(10).deleteChars(8).typeString("Markus Kojo").start();
