@@ -27,8 +27,8 @@ const Hero = () => {
 						</a>
 					</div>
 					<p>
-						Software developer, born in <span className="text-blue-400">Finland</span>. Located in <span className="text-red-500">Manchester</span>, UK.
-						<br /> Looking for my first job opportunity in the coding industry.
+						Tech enthusiast, located in Helsinki, <span className="text-blue-400">Finland</span>.
+						<br /> Looking for my first job opportunity in the tech industry.
 					</p>
 					<p>Take a look at my projects and what I can offer below.</p>
 				</div>
